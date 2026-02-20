@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sidebar Edutherz</title>
+
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="images/icon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="bootstrap-icons/bootstrap-icons.css">
+</head>
+
+<body>
+
+    <button class="menu-btn sidebar-btn" id="sidebar_btn" aria-label="Alternar menú móvil">
+        <i class="bi bi-list"></i>
+        <i class="bi bi-x-lg"></i>
+    </button>
+    <button class="dark-mode-btn" id="dark_mode_btn" aria-label="Alternar modo oscuro">
+        <i class="bi bi-moon"></i>
+        <i class="bi bi-sun"></i>
+    </button>
+
+    <aside class="sidebar" id="sidebar">
+        <div class="header">
+            <button class="menu-btn" id="menu_btn" aria-label="Minimizar barra lateral">
+                <i class="bi bi-chevron-left"></i>
+            </button>
+            <div class="brand">
+                <img class="brand-light" src="images/logo-light.svg" alt="Logo Edutherz Claro">
+                <img class="brand-dark" src="images/logo-dark.svg" alt="Logo Edutherz Oscuro">
+                <span>Edutherz</span>
+            </div>
+        </div>
+
+        <nav class="menu-container" aria-label="Menú principal">
+            <div class="search">
+                <i class="bi bi-search"></i>
+                <input type="search" placeholder="Buscar" aria-label="Buscar en el sitio">
+            </div>
+            <ul class="menu">
+                <li class="menu-item menu-item-static active">
+                    <a href="#" class="menu-link">
+                        <i class="bi bi-house-door"></i>
+                        <span>Inicio</span>
+                    </a>
+                </li>
+                <li class="menu-item menu-item-static">
+                    <a href="#" class="menu-link">
+                        <i class="bi bi-bar-chart"></i> <span>Dashboard</span> </a>
+                </li>
+                <li class="menu-item menu-item-dropdown">
+                    <a href="#" class="menu-link">
+                        <i class="bi bi-shop"></i>
+                        <span>Store</span>
+                        <i class="bi bi-chevron-down"></i>
+                    </a>
+                    <ul class="sub-menu">
+                        <li><a href="#" class="sub-menu-link">Por categoría</a></li>
+                        <li><a href="#" class="sub-menu-link">Catálogo</a></li>
+                    </ul>
+                </li>
+                <li class="menu-item menu-item-static">
+                    <a href="#" class="menu-link">
+                        <i class="bi bi-list-task"></i>
+                        <span>Task</span>
+                    </a>
+                </li>
+                <li class="menu-item menu-item-dropdown">
+                    <a href="#" class="menu-link">
+                        <i class="bi bi-folder"></i>
+                        <span>File</span>
+                        <i class="bi bi-chevron-down"></i>
+                    </a>
+                    <ul class="sub-menu">
+                        <li><a href="#" class="sub-menu-link">Imágenes</a></li>
+                        <li><a href="#" class="sub-menu-link">Audio</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="footer">
+            <ul class="menu">
+                <li class="menu-item menu-item-static">
+                    <a href="#" class="menu-link">
+                        <i class="bi bi-bell"></i>
+                        <span>Notificaciones</span>
+                    </a>
+                </li>
+                <li class="menu-item menu-item-static">
+                    <a href="#" class="menu-link">
+                        <i class="bi bi-gear"></i>
+                        <span>Configuración</span> </a>
+                </li>
+            </ul>
+            <div class="user">
+                <div class="user-img">
+                    <img src="images/user.webp" alt="Foto de perfil del usuario">
+                </div>
+                <div class="user-data">
+                    <span class="name">Edutherz</span> <span class="email">edutherz@org.com</span>
+                </div>
+                <button class="user-icon" aria-label="Cerrar sesión"
+                    style="border:none; background:none; cursor:pointer;">
+                    <i class="bi bi-box-arrow-right"></i>
+                </button>
+            </div>
+        </div>
+    </aside>
+
+    <main>
+        <h1>Hola Locote</h1>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
